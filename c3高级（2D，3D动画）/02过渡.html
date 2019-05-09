@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+		/* 默认状态（开始状态） */
+		.box {
+			  width: 300px;
+			  height: 300px;
+			  background-color: red;
+			  /* 当前盒子的样式要通过过渡的效果去实现 */
+
+			  /* 设置参与过渡的属性 */
+			 /*  transition-property: width,height,background-color;
+			  transition-property: all; */
+
+			  /* 设置过渡完成的时间 */
+			  /* transition-duration: 1s; */
+
+			  /* 设置过渡延时执行的时间 */
+			  /* transition-delay: 1s; */
+
+			  /* 设置过渡的类型（速度类型） */
+			 /*  transition-timing-function: ease;
+			  transition-timing-function: ease-in;
+			  transition-timing-function: ease-out;
+			  transition-timing-function: ease-in-out; */
+
+			  /* 代表当前过渡的速度是匀速完成的。 */
+			  /* transition-timing-function: linear; */
+			  /* transition: all  1s  linear; */
+
+			transition: width 1s linear,
+
+			  			  height 1s  1s linear,
+
+			  			  background-color 1s 2s linear;
+		}
+		/* 结束状态图 */
+		.box:hover {
+			  width: 200px;
+			  height: 200px;
+			  background-color: green;
+
+
+			  
+		}
+	</style>
+</head>
+<body>
+	
+
+	   <div class="box"></div>
+</body>
+</html>

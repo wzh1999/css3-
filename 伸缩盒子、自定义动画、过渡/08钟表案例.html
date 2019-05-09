@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		
+		  * {
+		  	 margin: 0;
+		  	 padding: 0;
+		  }
+
+		  .clock {
+		  	   width: 300px;
+		  	   height: 300px;
+		  	   border: 2px solid #000;
+		  	   border-radius: 50%;
+		  	   margin: 100px auto;
+		  	   position: relative;
+		  }
+
+		  .line {
+		  	 width: 1px;
+		  	 height: 100%;
+		  	 background-color: red;
+		  	 position: absolute;
+		  	 left: 50%;
+		  	 transform: translateX(-50%);
+		  }
+
+		  .two {
+		  	  transform: rotateZ(30deg);
+		  }
+		  .three {
+		  	  transform: rotateZ(60deg);
+		  }
+		  .four {
+		  	  transform: rotateZ(90deg);
+		  }
+		  .five {
+		  	  transform: rotateZ(120deg);
+		  }
+
+		  .six {
+		  	  transform: rotateZ(-30deg);
+		  }
+
+		  .cover {
+		  	  position: absolute;
+		  	  left: 50%;
+		  	  top: 50%;
+		  	  transform: translate(-50%,-50%);
+		  	  width: 280px;
+		  	  height: 280px;
+		  	  background-color: #fff;
+		  	  border-radius: 50%;
+
+		  }
+
+		  .h {
+		  	 width: 5px;
+		  	 height: 100px;
+		  	 background-color: #000;
+		  	 position: absolute;
+		  	 left: 50%;
+		  	 transform: translate(-50%,50px);
+		  }
+
+		   .m {
+		  	 width: 3px;
+		  	 height: 110px;
+		  	 background-color: green;
+		  	 position: absolute;
+		  	 left: 50%;
+		  	 transform: translate(-50%,40px);
+		  }
+
+		   .s {
+		  	 width: 1px;
+		  	 height: 120px;
+		  	 background-color: yellow;
+		  	 position: absolute;
+		  	 left: 50%;
+		  	 transform: translate(-50%,30px);
+
+			 transform-origin: bottom;
+
+		  	 animation: rotate 60s steps(60) infinite;
+		  }
+
+		  .dotted {
+		  	  width: 20px;
+		  	  height: 20px;
+		  	  background-color: red;
+		  	  border-radius: 50%;
+		  	  position: absolute;
+		  	  left: 50%;
+		  	  top: 50%;
+		  	  transform: translate(-50%,-50%);
+		  }
+
+
+		  @keyframes  rotate {
+		  	  from {
+		  	  	transform:translate(-50%,30px) rotateZ(0deg);
+		  	  }
+
+		  	  to {
+				transform:translate(-50%,30px) rotateZ(360deg);
+		  	  }
+		  }
+	</style>
+</head>
+<body>
+	
+		 <div class="clock">
+		 	 <div class="line"></div>
+		 	 <div class="line two"></div>
+		 	 <div class="line three"></div>
+		 	 <div class="line four"></div>
+		 	 <div class="line five"></div>
+		 	 <div class="line six"></div>
+
+		 	 <div class="cover"></div>
+
+		 	 <div class="h"></div>
+		 	 <div class="m"></div>
+		 	 <div class="s"></div>
+
+		 	 <div class="dotted"></div>
+		 </div>
+
+</body>
+</html>

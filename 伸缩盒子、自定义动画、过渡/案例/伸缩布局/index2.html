@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		 * {
+		 	 margin: 0;
+		 	 padding: 0;
+		 }
+
+
+		 .header {
+		 	  display: flex;
+		 }
+
+		 .header a {
+		 	 flex: 1;
+		 }
+		 .header img {
+		 	  width: 100%;
+		 }
+
+
+		 .content {
+		 	 padding: 20px;
+		 	 display: flex;
+		 	 flex-direction: column;
+		 }
+
+		 .public {
+		 	  height: 100px;
+		 	  background-color: red;
+		 	  flex: 1;
+		 	  margin-bottom: 10px;
+		 	  border-radius: 10px;
+
+		 	  display: flex;
+
+		 }
+
+		 .public>div {
+		 	 flex: 1;
+		 	 height: 100%;
+		 	 border-right: 1px solid #fff;
+		 }
+
+		 .public .r {
+		 	  border: 0 none;
+		 }
+
+
+
+		 .two {
+		 	 background-color: pink;
+		 }
+
+		 .three {
+		 	background-color: blue;
+		 }
+
+		 .four {
+		 	background-color: green;
+		 }
+
+
+		 .top {
+		 	 display: flex;
+		 }
+
+		 .top a {
+		 	 flex: 1;
+		 }
+
+		  .top a img {
+		  	 width: 100%;
+		  }
+
+		  .bot {
+		  	 border-top: 1px solid #ccc;
+		  	 height: 50px;
+		  	 display: flex;
+		  }
+
+		  .bot a {
+		  	 flex: 1;
+		  	 text-align: center;
+		  	 border-right: 1px solid #ccc;
+		  }
+
+	</style>
+</head>
+<body>
+
+	 <div class="header">
+	 	  <a href="#">
+	 	  	 <img src="img/banner.jpg" alt="">
+	 	  </a>
+	 </div>
+
+
+	 <div class="content">
+	 	 <div class="public one">
+	 	 	
+	 	 	  <div class="l"></div>
+	 	 	  <div class="m"></div>
+	 	 	  <div class="r"></div>
+	 	 </div>
+	 	 <div class="public two">
+	 	 	  <div class="l"></div>
+	 	 	  <div class="m"></div>
+	 	 	  <div class="r"></div>
+	 	 </div>
+	 	 <div class="public three">
+	 	 	  <div class="l"></div>
+	 	 	  <div class="m"></div>
+	 	 	  <div class="r"></div>
+	 	 </div>
+	 	 <div class="public four">
+	 	 	  <div class="l"></div>
+	 	 	  <div class="m"></div>
+	 	 	  <div class="r"></div>
+	 	 </div>
+	 </div>
+
+
+
+	 <div class="footer">
+	 	
+	 	  <div class="top">
+	 	  	
+	 	  	  <a href="#">
+	 	  	  	<img src="img/extra_1.png" alt="">
+	 	  	  </a>
+
+	 	  	  <a href="#">
+	 	  	  	<img src="img/extra_2.png" alt="">
+	 	  	  </a>
+	 	  </div>
+
+
+	 	  <div class="bot">
+	 	  	
+	 	  	   <a href="#">文字</a>
+	 	  	   <a href="#">文字</a>
+	 	  	   <a href="#">文字</a>
+	 	  </div>
+	 </div>
+</body>
+</html>

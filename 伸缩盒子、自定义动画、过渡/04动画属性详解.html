@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			/* 要执行动画，要调用 */
+			
+			/* 动画名称 */
+			animation-name: box_move;
+			/* 动画执行的时间 */
+			animation-duration: 1s;
+			/* 动画执行次数： 默认执行1次   infinite:无限循环*/
+			animation-iteration-count: infinite;
+			/* 设置动画逆波 */
+			animation-direction: alternate;
+			/* 设置动画的速度类型 */
+			animation-timing-function: linear;
+			/* 设置动画延时执行 */
+			animation-delay: 2s;
+			/* 设置动画时间之外的状态 */
+			animation-fill-mode: forwards;
+		}
+		.box:hover {
+			 /* 动画暂停 */
+			 animation-play-state: paused;
+		}
+
+		/* 第一步：先定义一个动画集（序列） */
+		@keyframes  box_move {
+			
+			 /* 第二步：定义动画的开始状态 */
+			 from {
+			 	transform: translate(0px);
+			 }
+			 /* 第三步：定义动画的结束状态 */
+			 to {
+				
+				 /* 2d的方式移动 */
+				 transform: translate(400px);
+			 }
+		}
+	</style>
+</head>
+<body>
+	
+	 <div class="box"></div>
+</body>
+</html>

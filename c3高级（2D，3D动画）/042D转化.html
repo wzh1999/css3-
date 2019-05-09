@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	   * {
+	   	 margin: 0;
+	   	 padding: 0;
+	   }
+		.line {
+			 height: 300px;
+			 background-color: red;
+			 overflow: hidden;
+		}
+
+		.box {
+			 width: 100px;
+			 height: 100px;
+			 margin-top: 100px;
+			 background-color: pink;
+			 /* 过渡 */
+			 transition: all 1s linear;
+		}
+
+		.line:hover .box {
+			/* 2d位移 */
+			transform: translate(100%);
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="line">
+		 <div class="box"></div>
+	</div>
+	 
+</body>
+</html>
